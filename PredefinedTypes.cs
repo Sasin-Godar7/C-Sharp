@@ -1,5 +1,5 @@
 
-//------------predefined type example----------------------------------
+//------------predefined type example------------------------------------
 class Program
 {
     static void Main()
