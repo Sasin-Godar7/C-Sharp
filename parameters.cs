@@ -93,25 +93,51 @@
 
 // the params modifier --------------------------------------------------
 
+// using System;
+// class Test
+// {
+//     static int add(params int[] arr)    // this is a params parameter
+//     {
+//         int sum = 0;
+//         for (int i = 0; i < arr.Length; i++)
+//         {
+//             sum += arr[i];
+//         }
+//         return sum;
+//     }
+
+//     static void Main()
+//     {
+//         int total = add(1, 2, 3, 4, 5);
+//         Console.WriteLine(total);
+//     }
+// }
+
+
+
+
+
 using System;
 class Test
 {
-    static int add(params int[] arr)    // this is a params parameter
+        static void Main()
     {
-        int sum = 0;
-        for (int i = 0; i < arr.Length; i++)
-        {
-            sum += arr[i];
-        }
-        return sum;
-    }
+         Foo();
+    }  
 
-    static void Main()
+     static void Foo(int a = 10)
     {
-        int total = add(1, 2, 3, 4, 5);
-        Console.WriteLine(total);
+        Console.WriteLine(a);
     }
 }
+    
+
+
+
+
+
+
+
 
 
 
