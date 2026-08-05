@@ -39,7 +39,9 @@ class Program
 {
     static void Main(String[] args)
     {
-        Console.WriteLine("The value of jan in month" + "Enum is "+(int)month.jan);  //0
+        // getting the integer value of the data members  
+
+        Console.WriteLine("The value of jan in month Enum is "+(int)month.jan);  //0
         
         Console.WriteLine("The value of feb in month" + "Enum is "+(int)month.feb);//1
         

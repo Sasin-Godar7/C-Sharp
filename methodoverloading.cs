@@ -24,3 +24,37 @@ class Program
 
     }
 }
+
+
+// method overrriding 
+// virtual or abstract keyword must use in the base class for method ovverriden 
+
+// using System;
+
+// class Animal
+// {
+//     public virtual void Sound()
+//     {
+//         Console.WriteLine("Animal makes sound");
+//     }
+// }
+
+// class Dog : Animal
+// {
+//     public override void Sound()
+//     {
+//         Console.WriteLine("Dog barks");
+//     }
+// }
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Dog d = new Dog();
+
+//         d.Sound();
+//     }
+// }
+
+// output-- dog barks

@@ -48,49 +48,87 @@
 
 //design a interface IBank with methods deposit() and withdraw() . create a class Account thta implements the interface and perform basic banking operations based on the user input.
 
+// using System;
+
+// interface IBank
+// {
+//     int Deposit();
+//     int Withdraw();
+// }
+
+// class CA
+// {
+//          public int amount = 900;
+
+//     public void Read Amount(int amount)
+//     {
+//         this.amount = amount;
+//     }
+// }
+
+// class BB : CA, IBank
+// {
+//     public int Deposit()
+//     {
+//         int depositAmt = 100;
+//         amount += depositAmt;   
+//         return amount;
+//     }
+
+//     public int Withdraw()
+//     {
+//         int withdrawAmt = 50;
+//         amount -= withdrawAmt;  
+//         return amount;
+//     }
+// }
+
+// class Account
+// {
+//     static void Main()
+//     {
+//         BB b = new BB();
+
+//         Console.WriteLine("Initial Amount: " + b.amount);
+//         Console.WriteLine("After Deposit: " + b.Deposit());
+//         Console.WriteLine("After Withdraw: " + b.Withdraw());
+//     }
+// }
+
+
+
 using System;
 
-interface IBank
+interface IAnimal
 {
-    int Deposit();
-    int Withdraw();
+    void Sound();
 }
 
-class CA
+interface IRobot
 {
-         public int amount = 900;
+    void Charge();
+}
 
-    public void ReadAmount(int amount)
+class AndroidDog : IAnimal, IRobot
+{
+    public void Sound()
     {
-        this.amount = amount;
+        Console.WriteLine("Animal Sound");
+    }
+
+    public void Charge()
+    {
+        Console.WriteLine("Robot Charging...");
     }
 }
 
-class BB : CA, IBank
+class Program
 {
-    public int Deposit()
+    static void Main(string[] args)
     {
-        int depositAmt = 100;
-        amount += depositAmt;   
-        return amount;
-    }
+        AndroidDog d = new AndroidDog();
 
-    public int Withdraw()
-    {
-        int withdrawAmt = 50;
-        amount -= withdrawAmt;  
-        return amount;
-    }
-}
-
-class Account
-{
-    static void Main()
-    {
-        BB b = new BB();
-
-        Console.WriteLine("Initial Amount: " + b.amount);
-        Console.WriteLine("After Deposit: " + b.Deposit());
-        Console.WriteLine("After Withdraw: " + b.Withdraw());
+        d.Sound();
+        d.Charge();
     }
 }
