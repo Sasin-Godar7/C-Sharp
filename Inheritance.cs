@@ -1,41 +1,3 @@
-// using System;
-// class Polygon
-// {
-//     public int dim1,dim2;
-//     public void ReadDimension(int dim1,int dim2)
-//     {
-//         this.dim1=dim1;
-//         this.dim2=dim2;
-//     }
-// }
-// class Rectangle:Polygon
-// {
-//     public void AreaRe()
-//     {
-//         int area=dim1*dim2;
-//         Console.WriteLine("Area of Rectangle is "+area);
-//     }
-// }
-// class Triangle:Polygon
-// {
-//     public void AreaTri()
-//     {
-//         int area=dim1*dim2/2;
-//         Console.WriteLine("Area of Triangle is "+area);
-//     }
-// }
-// class Hier
-// {
-//     static void Main()
-//     {
-//         Triangle r=new Triangle();
-//         r.ReadDimension(10,20);
-//         r.AreaTri();
-//         Rectangle t=new Rectangle();
-//         t.ReadDimension(10,20);
-//         t.AreaRe();
-//     }
-// }
 
 
 // Multiple Inheritence
@@ -84,10 +46,6 @@
 
 
 
-
-
-
-
 //design a interface IBank with methods deposit() and withdraw() . create a class Account thta implements the interface and perform basic banking operations based on the user input.
 
 using System;
@@ -100,7 +58,7 @@ interface IBank
 
 class CA
 {
-    public int amount = 900;
+         public int amount = 900;
 
     public void ReadAmount(int amount)
     {

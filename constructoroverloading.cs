@@ -1,56 +1,151 @@
-using System;
+// using System;
 
+// class Employee
+// {
+//     public string Name;
+//      public int Age;
+//      public double Salary;
+
+//      //default constructor
+//      public Employee()
+//     {
+//         Name = "Unknown";
+//         Age = 0;
+//         Salary = 0.000;
+//     }
+
+//     // constructor with 2 parameters
+
+//     public Employee(string name, int age)
+//     {
+//         Name = name;
+//         Age = age;
+//         Salary = 0.0;
+//     }
+
+    
+//     // constructor with 3 parameters
+
+//       public Employee(string name, int age, double salary)
+//     {
+//         Name = name;
+//         Age = age;
+//         Salary = salary;
+//     }
+
+//     public void display()
+//     {
+//         Console.WriteLine($"Name : {Name} , Age :{Age}, Salary :{Salary}");
+//     }   
+// }
+
+
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Employee e1 = new Employee();
+//         Employee e2 = new Employee("Sasin",21);
+//         Employee e3 = new Employee("prabin",21,1900);
+
+//         e1.display();
+//         e2.display();
+//         e3.display();
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
 class Employee
 {
-    public string Name;
-     public int Age;
-     public double Salary;
+    string Name;
+    int Age;
+    double Salary;
 
-     //default constructor
-     public Employee()
+    public Employee()
     {
         Name = "Unknown";
         Age = 0;
-        Salary = 0.000;
+        Salary=0.0;
     }
 
-    // constructor with 2 parameters
-
-    public Employee(string name, int age)
+     public Employee(string name, int age)
     {
         Name = name;
         Age = age;
-        Salary = 0.0;
+        Salary=0.0;
     }
 
-    
-    // constructor with 2 parameters
-
-      public Employee(string name, int age, double salary)
+     public Employee(string name, int age, double salary)
     {
-        Name = name;
-        Age = age;
-        Salary = salary;
+        Name = "Unknown";
+        Age = 0;
+        Salary=salary;
     }
 
     public void display()
     {
-        Console.WriteLine($"Name : {Name} , Age :{Age}, Salary :{Salary}");
-    }   
-}
+        Console.WriteLine($"NAME :{Name} ,, AGE: {Age},, salary: {Salary}");
+    }
 
 
-
-class Program
-{
     static void Main()
     {
-        Employee e1 = new Employee();
-        Employee e2 = new Employee("Sasin",21);
-        Employee e3 = new Employee("Sasin",21,1900);
+        Employee e1 = new Employee(); // call the default cons
+        Employee e2 =new Employee("sasin",21);
+        Employee e3 = new Employee("ishhhhh",20,90000);
 
         e1.display();
         e2.display();
         e3.display();
+        Console.ReadKey();
     }
+    
 }

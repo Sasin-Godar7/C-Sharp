@@ -1,23 +1,23 @@
-// using System;
+using System;
 
-// sealed class Test
-// {
-//     public void message()
-//     {
-//         Console.WriteLine("Running from sealed class ;;;;;");
-//     }
-// }
+sealed class Test
+{
+    public void message()
+    {
+        Console.WriteLine("Running from sealed class ;;;;;");
+    }
+}
 
-// class Program
-// {
-//     static void Main(string[] args)
-//     {
-//         Test obj = new Test();
-//         obj.message(); 
-//     }
-// }
+class Program
+{
+    static void Main(string[] args)
+    {
+        Test obj = new Test();
+        obj.message(); 
+    }
+}
 
-// class B:Test --------------------------------------------------'B': cannot derive from sealed type 'Test'
+// class B:Test // --------------------------------------------------'B': cannot derive from sealed type 'Test'
 // {
 //     static void Main(string[] args)
 //     {
