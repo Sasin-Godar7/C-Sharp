@@ -1,5 +1,13 @@
 // boxing and unboxing it is a act of converting value-type instance to a refrence instance
 
+int x = 10;
+
+object obj = x;      // Boxing
+
+int y = (int)obj;    // Unboxing
+
+Console.WriteLine(y);
+
 
 // gettype and typeof operator
 

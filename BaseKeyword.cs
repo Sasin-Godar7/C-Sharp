@@ -26,34 +26,33 @@
 
 
 
+// using System;
+
+// class Animal
+// {
+//     public void Sound()
+//     {
+//         Console.WriteLine("Animal makes sound");
+//     }
+// }
+
+// class Dog : Animal
+// {
+//     public void Show()
+//     {
+//         base.Sound();
+//     }
+// }
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Dog d = new Dog();
+//         d.Show();
+//     }
+// }
 
 
-//derive class bata parent class access grna xa vane we use base keyword
-
-using System;
-class Base{
-public virtual void test()
-{
-    Console.WriteLine("I am the inside base/ parent class");
-
-}
-}
 
 
-class sub1 : Base
-{
-    public override void test()
-    {
-        base.test();
-        Console.WriteLine("I am inside the derived class ;;");
-    }
-}
-
-class BaseEx
-{
-    public static void Main(string[] args)
-    {
-        sub1 obj = new sub1();
-        obj.test();
-    }
-}
